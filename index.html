@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Training & Certification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Training Platform</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="courses" class="container">
+        <h2>Available Courses</h2>
+        <div class="course-card" id="course1">
+            <h3>Web Development Basics</h3>
+            <p>Learn HTML, CSS, and JavaScript fundamentals.</p>
+            <button class="enroll-btn" onclick="enroll('Web Development Basics')">Enroll Now</button>
+            <div class="progress" id="progress1"></div>
+        </div>
+        <div class="course-card" id="course2">
+            <h3>Advanced JavaScript</h3>
+            <p>Master complex JavaScript concepts.</p>
+            <button class="enroll-btn" onclick="enroll('Advanced JavaScript')">Enroll Now</button>
+            <div class="progress" id="progress2"></div>
+        </div>
+    </section>
+
+    <section id="certificate" class="container" style="display:none;">
+        <h2>Congratulations!</h2>
+        <p>You have successfully completed the course: <span id="completed-course"></span></p>
+        <div>
+            <button onclick="downloadCertificate()">Download Certificate</button>
+            <button onclick="resetCourse()">Restart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Training Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
